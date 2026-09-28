@@ -1,0 +1,30 @@
+# Secrets
+.env
+*.env
+**/secrets/
+
+# Model weights & large binaries
+*.pt
+*.onnx
+*.engine
+*.param
+*.bin
+
+# Datasets (kept in Roboflow/Drive, not git)
+dataset/
+datasets/
+*.zip
+
+# Build output
+/dist/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

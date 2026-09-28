@@ -1,0 +1,22 @@
+[Unit]
+Description=Habanero quality detection (Pi 5 camera inference)
+After=multi-user.target
+
+[Service]
+Type=simple
+# Adjust paths to match your deployment
+WorkingDirectory=/home/pi/agri-vision-ai/pi
+ExecStart=/usr/bin/python3 /home/pi/agri-vision-ai/pi/detect_camera.py --model best.onnx
+Restart=on-failure
+RestartSec=5
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
+# Install:
+#   sudo cp habanero-detect.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now habanero-detect.service
+# Logs:
+#   journalctl -u habanero-detect.service -f

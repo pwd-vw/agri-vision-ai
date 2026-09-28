@@ -1,0 +1,4 @@
+# Pin exact versions once locked — see ../VERSIONS.md
+ultralytics
+opencv-python
+picamera2

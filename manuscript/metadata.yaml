@@ -1,0 +1,20 @@
+---
+title: "Agri Vision AI: จากพริกหนึ่งเม็ดสู่ AI ที่ตัดเกรดได้เอง"
+subtitle: "ถ่ายภาพ → Roboflow → Google Colab → Raspberry Pi 5"
+author: "PWD Vision Works"
+lang: th-TH
+rights: "© PWD Vision Works Co., Ltd."
+date: "2026"
+
+# --- PDF (xelatex) settings ---
+mainfont: "Sarabun"        # falls back to Waree automatically in build.sh if not installed
+documentclass: report
+geometry: margin=1in
+toc: true
+toc-depth: 2
+numbersections: true
+
+# --- EPUB settings ---
+epub-cover-image: assets/cover.png   # add this file before building EPUB; script warns if missing
+css: epub.css
+---
